@@ -1,0 +1,47 @@
+class MyClass:
+    x = 5
+
+
+p1 = MyClass()
+print(p1.x)
+
+# All classes have a function called __init__(), which is always executed when the class is being initiated.
+
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+p1 = Person("John", 36)
+print(p1.name)
+print(p1.age)
+
+# The self Parameter
+
+
+class Person1:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
+
+p1 = Person1("John", 36)
+p1.myfunc()
+
+
+class Person2:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print("Hello my name is " + self.name)
+
+
+p1 = Person2("John", 36)
+p1.myfunc()
